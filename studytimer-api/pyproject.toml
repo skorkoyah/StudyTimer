@@ -1,0 +1,25 @@
+[project]
+name = "api"
+version = "0.1.2"
+description = "API for the mobile app"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "fastapi~=0.119",
+    "firebase-admin~=7.1",
+    "httpx~=0.28",
+    "psutil~=7.1",
+    "pydantic~=2.12",
+    "supabase~=2.22",
+    "uvicorn~=0.37"
+]
+
+[dependency-groups]
+dev = [
+    "mosaygent==0.1.9",
+]
+test = [
+    "pytest~=8.4",
+    "pytest-asyncio~=1.2",
+    "pytest-mock~=3.15",
+]
